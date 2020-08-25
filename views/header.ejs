@@ -1,0 +1,54 @@
+<!-- css files  -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/css/header.css">
+
+
+<nav class="navbar navbar-light bg-light" style="border-bottom: 1px solid black;">
+    <div class="nav-left">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Api Inc
+    </a>
+</div>
+
+<div class="nav-right" style="display:flex;justify-content:space-around; flex-direction:row; min-width:200px">
+
+    <!--user icon-->
+    <div class="nav-right-child1">
+        <img src="https://image.flaticon.com/icons/svg/875/875503.svg" width="30px" height="30px">
+    </div>
+
+    <!--user icon-->
+
+
+<!-- drop down -->
+
+<div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <% if(!locals.user){%>
+        Profile
+        <%}else{%>
+          <%=user.name%>
+<%}%>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <button class="dropdown-item" type="button">About Me</button>
+      <button class="dropdown-item" type="button">Change Password</button>
+      <button class="dropdown-item" type="button">Premium Plan </button>
+    </div>
+  </div>
+
+<!-- drop down -->
+
+</div>
+
+  </nav>
+
+
+<!-- main code -->
+
+
+
+
+

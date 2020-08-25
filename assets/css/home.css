@@ -1,0 +1,18 @@
+.home{
+    width:100vw;
+    height:100vh;
+   background:#7952b3;
+   opacity: 0.9;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Currency{
+    margin:40px;
+}
+.Weather{
+    margin:40px;
+}

@@ -1,0 +1,118 @@
+<!-- css files  -->
+
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+
+
+<!-- main code -->
+
+
+<% if(! locals.user ){  %>
+  <div style="text-align: center; position: relative;top:50%">
+    <h1 >Please Login</h1>
+    <h5> To view Content</h5>
+    <button type="submit" class="btn btn-light btn-lg active"><a href="/user/signup">Sign Up</a></button>
+    <button type="submit" class="btn btn-light btn-lg active"><a href="/user/signin">Sign In</a></button>
+  </div>
+   <%}else{%>
+     
+
+<div class="home" id="home1">
+
+
+<!-- Currency Card -->
+
+<div class="Currency" >
+    <div class="card" id="currencyCard" style="width: 20rem;">
+        <img src="https://images.unsplash.com/photo-1591033594798-33227a05780d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=954&q=80" class="card-img-top" alt="Currency Convetor">
+        <div class="card-body" style="text-align: center">
+          <h5 class="card-title" style="font-size:1.4rem;color:blue;">Currency Convetor</h5>
+          <p class="card-text">Hmm! Wanna know the value of your currency?</p>
+          <a href="#" id="currencyButton" class="btn btn-primary">Calculate</a>
+        </div>
+      </div>
+</div>
+
+<!-- Weather Card -->
+
+<div class="Weather">
+
+    <div class="card" id="weatherCard" style="width: 20rem;">
+        <img height="246px" src="https://images.unsplash.com/photo-1534794048419-48e110dca88e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Weather">
+        <div class="card-body" style="text-align: center">
+          <h5 class="card-title" style="font-size:1.4rem;color:blue;">Weather</h5>
+          <p class="card-text">Hmm! wanna know whether it rain today?</p>
+          <a href="#" id="weatherButton" class="btn btn-primary">Check</a>
+        </div>
+      </div>
+    
+</div>
+
+<!-- Currency Work Start Here -->
+
+
+
+
+
+
+
+<!-- Currency Work End -->
+
+<!-- Weather Input -->
+
+<div class="weatherBox" >
+
+    <form>
+        <div  id="weatherInput" class="form-row align-items-center" style="display:flex;flex-direction:column;text-align: center;">
+          
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup" >Username</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">  CITY </div>
+              </div>
+              <input id="city" type="text" class="form-control" id="inlineFormInputGroup" placeholder="ENTER A CITY NAME" required>
+            </div>
+          </div>
+          
+          <div class="col-auto">
+            <button type="submit" id="weatherSubmit" class="btn btn-primary mb-2">Submit</button>
+          </div>
+        </div>
+      </form>
+
+            <!-- Output -->
+
+            
+
+</div>
+
+
+<div id="output" class="row" style="min-width:500px; min-height:250px; margin:50px">
+    <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="Place">Place</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Temperature</a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Description</a>
+        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">humidity</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        <div  style="font-size: 1.5rem; text-align: center;background:white;position: relative; min-height:47px" class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+        <div style="font-size: 1.5rem; text-align: center;background:white;position: relative; margin-top:50px; min-height:47px"class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+        <div style="font-size: 1.5rem; text-align: center;background:white;position: relative; margin-top:100px; min-height:47px" class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+        <div style="font-size: 1.5rem; text-align: center;background:white;position: relative; margin-top:150px; min-height:47px" class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<%}%>
+
+
+
+
+
+ <!-- js files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/home.js"></script>

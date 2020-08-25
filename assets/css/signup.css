@@ -1,0 +1,15 @@
+.outer-signup{
+    width:100vw;
+    height:100%;
+    background:#7952b3;
+    color:white;
+
+}
+
+.sign-up{
+    
+    position: relative;
+    max-width:30%;
+    left:60%;
+    top:20%;
+}
