@@ -37,7 +37,7 @@ $("document").ready(function() {
       
          function weather(city){
            console.log("I am called");
-             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f77ae8009b4c742ac6bbbdc32981df1
+             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=YOUR API KEY
              `)
              .then(response =>response.json())
              .catch(err=>{alert("No data found");})
